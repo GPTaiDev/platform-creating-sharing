@@ -1,0 +1,43 @@
+/* Mobile-first styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme styles */
+.theme-light {
+    --background-color: #fff;
+    --text-color: #000;
+}
+
+/* Dark theme styles */
+.theme-dark {
+    --background-color: #333;
+    --text-color: #fff;
+}
+
+/* Responsive design & Flexbox/Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Animations & Transitions */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
